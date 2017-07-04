@@ -1,0 +1,671 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.0": {
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Packaging.Tools/1.0.0-preview2-25303-01": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Packaging.Tools.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.0-preview2-25303-01": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview2-25303-01"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+        }
+      },
+      "System.DirectoryServices/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.FileSystem.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.Permissions": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.DirectoryServices.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.DirectoryServices.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.DirectoryServices.AccountManagement/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0-preview2-25504-01",
+          "System.DirectoryServices": "4.5.0-preview2-25504-01",
+          "System.DirectoryServices.Protocols": "4.5.0-preview2-25504-01",
+          "System.IO.FileSystem.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.Permissions": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.DirectoryServices.AccountManagement.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.DirectoryServices.Protocols/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.Protocols.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.DirectoryServices.Protocols.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.IO.FileSystem.AccessControl/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Permissions/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0-preview2-25504-01": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "dhJSrlBSVTnhRQczntpByPWInWBpyJP6QSP5605d2NlGRZ2vwo+Jj949Lr+8nxRMfTCW7lsWv0GP734O8NuswA==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        "Microsoft.NETCore.Platforms.1.1.0.nupkg.sha512",
+        "Microsoft.NETCore.Platforms.nuspec",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "runtime.json"
+      ]
+    },
+    "Microsoft.Packaging.Tools/1.0.0-preview2-25303-01": {
+      "sha512": "cLm+L1PcjBm9AG7IBi+kTXxAuxeF75Hxue/CIefMwVuGX6WlkAIyj0LpGKPWXVGQ9Ci1jmJr81gA8BvPKmI7IA==",
+      "type": "package",
+      "path": "microsoft.packaging.tools/1.0.0-preview2-25303-01",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "build/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/Microsoft.Extensions.DependencyModel.dll",
+        "build/Microsoft.Packaging.Tools.Tasks.dll",
+        "build/Microsoft.Packaging.Tools.Trimming.targets",
+        "build/Microsoft.Packaging.Tools.targets",
+        "build/Newtonsoft.Json.dll",
+        "build/System.Collections.Immutable.dll",
+        "build/System.Reflection.Metadata.dll",
+        "build/desktop/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/desktop/Microsoft.Extensions.DependencyModel.dll",
+        "build/desktop/Microsoft.Packaging.Tools.Tasks.dll",
+        "build/desktop/Newtonsoft.Json.dll",
+        "build/desktop/System.Collections.Immutable.dll",
+        "build/desktop/System.Reflection.Metadata.dll",
+        "dotnet_library_license.txt",
+        "microsoft.packaging.tools.1.0.0-preview2-25303-01.nupkg.sha512",
+        "microsoft.packaging.tools.nuspec"
+      ]
+    },
+    "NETStandard.Library/2.0.0-preview2-25303-01": {
+      "sha512": "qvoBhovOdO1nOFu/oq5OoOALxw2ZsO5vnqgZMSNoIAVvS2Sc5cvslgdEg3IPCJbSxgz2yaZ+jsH4s+E82Erupw==",
+      "type": "package",
+      "path": "netstandard.library/2.0.0-preview2-25303-01",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "build/NETStandard.Library.targets",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0-preview2-25303-01.nupkg.sha512",
+        "netstandard.library.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/4.5.0-preview2-25504-01": {
+      "sha512": "RtkL1Z6OtlPG368ZDlewPerA8JXs+1FaHRg/NXIJG2YirGQEjpYCSHB0/dBqnwNNRkiMHU9QzmKSLtOFUP9B9w==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "ref/uap10.0.15138/System.Configuration.ConfigurationManager.dll",
+        "ref/uap10.0.15138/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.DirectoryServices/4.5.0-preview2-25504-01": {
+      "sha512": "fW/oAUxkibuInn3m6f40kQVEF6xE3FrDwcXx4zUxHAKfl7hXkPwgWCmWUJdGLq4QqnKzE62i0cMGKmSYlmvYPw==",
+      "type": "package",
+      "path": "system.directoryservices/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.DirectoryServices.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.DirectoryServices.dll",
+        "ref/netstandard2.0/System.DirectoryServices.xml",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netstandard2.0/System.DirectoryServices.dll",
+        "system.directoryservices.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.directoryservices.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.DirectoryServices.AccountManagement/4.5.0-preview2-25504-01": {
+      "sha512": "45ZZjtu9l6o2/aR5Xs2kDZNuLzl15hGpht3bApWCUH3mDo58M2Au+CYssz/XV9PN/kscySkqNqNoCQoy/xBnHg==",
+      "type": "package",
+      "path": "system.directoryservices.accountmanagement/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.DirectoryServices.AccountManagement.dll",
+        "ref/netstandard2.0/System.DirectoryServices.AccountManagement.xml",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll",
+        "system.directoryservices.accountmanagement.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.directoryservices.accountmanagement.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.DirectoryServices.Protocols/4.5.0-preview2-25504-01": {
+      "sha512": "21uKQuT7ELF6jL+F3oOrpq3YRq7+ZC71J3yPwDyKhiKIZN/IfaZertMii7Dhgib07HNHrnuoEZxZVg0n+GEcHw==",
+      "type": "package",
+      "path": "system.directoryservices.protocols/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.DirectoryServices.Protocols.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.DirectoryServices.Protocols.dll",
+        "ref/netstandard2.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netstandard2.0/System.DirectoryServices.Protocols.dll",
+        "system.directoryservices.protocols.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.directoryservices.protocols.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IO.FileSystem.AccessControl/4.5.0-preview2-25504-01": {
+      "sha512": "A1Gur3nRYwsK+UHYrXRX+6VrLIEtH47ZDfhFlE4X6FjAdoEY5Fzt1jz/vfzVeIuemAaMLgCAq3xRIySP57MOSA==",
+      "type": "package",
+      "path": "system.io.filesystem.accesscontrol/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.FileSystem.AccessControl.dll",
+        "lib/net461/System.IO.FileSystem.AccessControl.dll",
+        "lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "ref/net46/System.IO.FileSystem.AccessControl.dll",
+        "ref/net461/System.IO.FileSystem.AccessControl.dll",
+        "ref/net461/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/de/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/es/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/it/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "ref/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "runtimes/unix/lib/netcoreapp2.0/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/net46/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/net461/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "system.io.filesystem.accesscontrol.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.io.filesystem.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.AccessControl/4.5.0-preview2-25504-01": {
+      "sha512": "+4GQMhVnWREsVrBdEG1h4dzsfvrxaD6eXKxPielFp09HFL2XsT6kl8ckhmstu2TI+mXyyQ3wyWCwTZfsvQl5pg==",
+      "type": "package",
+      "path": "system.security.accesscontrol/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.15138/System.Security.AccessControl.dll",
+        "ref/uap10.0.15138/System.Security.AccessControl.xml",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.15138/System.Security.AccessControl.dll",
+        "system.security.accesscontrol.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.ProtectedData/4.5.0-preview2-25504-01": {
+      "sha512": "MgP7vmP4+n76g1kcbTkO0J6/8Wx+8s+nsj3wQtua/WzzyiLmo/Lkci51PBGbiTI4HEw3rmcRA+V/if3lebB+AQ==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
+        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
+        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "system.security.cryptography.protecteddata.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/4.5.0-preview2-25504-01": {
+      "sha512": "X4c3n7N4aNpw2cBxMlEZR/QXAo6A5G1e7LuuUILdnJNoc/+r5LZRnMP2grwy9mruXDtFG9j0n1W1JzAi7PwXFQ==",
+      "type": "package",
+      "path": "system.security.permissions/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "ref/uap10.0.15138/System.Security.Permissions.dll",
+        "ref/uap10.0.15138/System.Security.Permissions.xml",
+        "system.security.permissions.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.security.permissions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/4.5.0-preview2-25504-01": {
+      "sha512": "N3fnfkplxEOEuWUf33gRA4ng9lrFN5S+19CzkvJiRQ+0NmgF4fkYiOTXpjDGJ/w5QO5XrNBrEw2H3ukJEtuYZA==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.5.0-preview2-25504-01",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "ref/uap10.0.15138/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.15138/System.Security.Principal.Windows.dll",
+        "system.security.principal.windows.4.5.0-preview2-25504-01.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.0": [
+      "NETStandard.Library >= 2.0.0-preview2-25303-01",
+      "System.DirectoryServices >= 4.5.0-preview2-25504-01",
+      "System.DirectoryServices.AccountManagement >= 4.5.0-preview2-25504-01"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nick\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\nj-dev\\standard.two\\standard.two\\standard.two.csproj",
+      "projectName": "standard.two",
+      "projectPath": "C:\\nj-dev\\standard.two\\standard.two\\standard.two.csproj",
+      "outputPath": "C:\\nj-dev\\standard.two\\standard.two\\obj\\",
+      "projectStyle": "PackageReference",
+      "originalTargetFrameworks": [
+        "netstandard2.0"
+      ],
+      "frameworks": {
+        "netstandard2.0": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "netstandard2.0": {
+        "dependencies": {
+          "System.DirectoryServices": {
+            "target": "Package",
+            "version": "4.5.0-preview2-25504-01"
+          },
+          "NETStandard.Library": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0.0-preview2-25303-01",
+            "autoReferenced": true
+          },
+          "System.DirectoryServices.AccountManagement": {
+            "target": "Package",
+            "version": "4.5.0-preview2-25504-01"
+          }
+        },
+        "imports": [
+          "net461"
+        ]
+      }
+    }
+  }
+}

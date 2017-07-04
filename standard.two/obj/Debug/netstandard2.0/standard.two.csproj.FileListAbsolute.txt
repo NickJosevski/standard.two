@@ -1,0 +1,8 @@
+c:\nj-dev\standard.two\standard.two\bin\Debug\netstandard2.0\standard.two.deps.json
+c:\nj-dev\standard.two\standard.two\bin\Debug\netstandard2.0\standard.two.dll
+c:\nj-dev\standard.two\standard.two\bin\Debug\netstandard2.0\standard.two.pdb
+c:\nj-dev\standard.two\standard.two\obj\Debug\netstandard2.0\standard.two.csprojResolveAssemblyReference.cache
+c:\nj-dev\standard.two\standard.two\obj\Debug\netstandard2.0\standard.two.csproj.CoreCompileInputs.cache
+c:\nj-dev\standard.two\standard.two\obj\Debug\netstandard2.0\standard.two.AssemblyInfo.cs
+c:\nj-dev\standard.two\standard.two\obj\Debug\netstandard2.0\standard.two.dll
+c:\nj-dev\standard.two\standard.two\obj\Debug\netstandard2.0\standard.two.pdb

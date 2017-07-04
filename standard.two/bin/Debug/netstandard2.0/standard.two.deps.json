@@ -1,0 +1,198 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "c4ac6bf252145c4494a939aad9829d82bc9eda7b"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "standard.two/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview2-25303-01",
+          "System.DirectoryServices": "4.5.0-preview2-25504-01",
+          "System.DirectoryServices.AccountManagement": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "standard.two.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.Packaging.Tools/1.0.0-preview2-25303-01": {},
+      "NETStandard.Library/2.0.0-preview2-25303-01": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview2-25303-01"
+        }
+      },
+      "System.Configuration.ConfigurationManager/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+        }
+      },
+      "System.DirectoryServices/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.IO.FileSystem.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.Permissions": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.dll": {}
+        }
+      },
+      "System.DirectoryServices.AccountManagement/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0-preview2-25504-01",
+          "System.DirectoryServices": "4.5.0-preview2-25504-01",
+          "System.DirectoryServices.Protocols": "4.5.0-preview2-25504-01",
+          "System.IO.FileSystem.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.Permissions": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll": {}
+        }
+      },
+      "System.DirectoryServices.Protocols/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.DirectoryServices.Protocols.dll": {}
+        }
+      },
+      "System.IO.FileSystem.AccessControl/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01",
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
+      "System.Security.AccessControl/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/4.5.0-preview2-25504-01": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0-preview2-25504-01": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0-preview2-25504-01"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0-preview2-25504-01": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "standard.two/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dhJSrlBSVTnhRQczntpByPWInWBpyJP6QSP5605d2NlGRZ2vwo+Jj949Lr+8nxRMfTCW7lsWv0GP734O8NuswA==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Packaging.Tools/1.0.0-preview2-25303-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cLm+L1PcjBm9AG7IBi+kTXxAuxeF75Hxue/CIefMwVuGX6WlkAIyj0LpGKPWXVGQ9Ci1jmJr81gA8BvPKmI7IA==",
+      "path": "microsoft.packaging.tools/1.0.0-preview2-25303-01",
+      "hashPath": "microsoft.packaging.tools.1.0.0-preview2-25303-01.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0-preview2-25303-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qvoBhovOdO1nOFu/oq5OoOALxw2ZsO5vnqgZMSNoIAVvS2Sc5cvslgdEg3IPCJbSxgz2yaZ+jsH4s+E82Erupw==",
+      "path": "netstandard.library/2.0.0-preview2-25303-01",
+      "hashPath": "netstandard.library.2.0.0-preview2-25303-01.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RtkL1Z6OtlPG368ZDlewPerA8JXs+1FaHRg/NXIJG2YirGQEjpYCSHB0/dBqnwNNRkiMHU9QzmKSLtOFUP9B9w==",
+      "path": "system.configuration.configurationmanager/4.5.0-preview2-25504-01",
+      "hashPath": "system.configuration.configurationmanager.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.DirectoryServices/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fW/oAUxkibuInn3m6f40kQVEF6xE3FrDwcXx4zUxHAKfl7hXkPwgWCmWUJdGLq4QqnKzE62i0cMGKmSYlmvYPw==",
+      "path": "system.directoryservices/4.5.0-preview2-25504-01",
+      "hashPath": "system.directoryservices.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.DirectoryServices.AccountManagement/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-45ZZjtu9l6o2/aR5Xs2kDZNuLzl15hGpht3bApWCUH3mDo58M2Au+CYssz/XV9PN/kscySkqNqNoCQoy/xBnHg==",
+      "path": "system.directoryservices.accountmanagement/4.5.0-preview2-25504-01",
+      "hashPath": "system.directoryservices.accountmanagement.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.DirectoryServices.Protocols/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-21uKQuT7ELF6jL+F3oOrpq3YRq7+ZC71J3yPwDyKhiKIZN/IfaZertMii7Dhgib07HNHrnuoEZxZVg0n+GEcHw==",
+      "path": "system.directoryservices.protocols/4.5.0-preview2-25504-01",
+      "hashPath": "system.directoryservices.protocols.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.IO.FileSystem.AccessControl/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A1Gur3nRYwsK+UHYrXRX+6VrLIEtH47ZDfhFlE4X6FjAdoEY5Fzt1jz/vfzVeIuemAaMLgCAq3xRIySP57MOSA==",
+      "path": "system.io.filesystem.accesscontrol/4.5.0-preview2-25504-01",
+      "hashPath": "system.io.filesystem.accesscontrol.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+4GQMhVnWREsVrBdEG1h4dzsfvrxaD6eXKxPielFp09HFL2XsT6kl8ckhmstu2TI+mXyyQ3wyWCwTZfsvQl5pg==",
+      "path": "system.security.accesscontrol/4.5.0-preview2-25504-01",
+      "hashPath": "system.security.accesscontrol.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MgP7vmP4+n76g1kcbTkO0J6/8Wx+8s+nsj3wQtua/WzzyiLmo/Lkci51PBGbiTI4HEw3rmcRA+V/if3lebB+AQ==",
+      "path": "system.security.cryptography.protecteddata/4.5.0-preview2-25504-01",
+      "hashPath": "system.security.cryptography.protecteddata.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.Security.Permissions/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X4c3n7N4aNpw2cBxMlEZR/QXAo6A5G1e7LuuUILdnJNoc/+r5LZRnMP2grwy9mruXDtFG9j0n1W1JzAi7PwXFQ==",
+      "path": "system.security.permissions/4.5.0-preview2-25504-01",
+      "hashPath": "system.security.permissions.4.5.0-preview2-25504-01.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.5.0-preview2-25504-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N3fnfkplxEOEuWUf33gRA4ng9lrFN5S+19CzkvJiRQ+0NmgF4fkYiOTXpjDGJ/w5QO5XrNBrEw2H3ukJEtuYZA==",
+      "path": "system.security.principal.windows/4.5.0-preview2-25504-01",
+      "hashPath": "system.security.principal.windows.4.5.0-preview2-25504-01.nupkg.sha512"
+    }
+  }
+}
